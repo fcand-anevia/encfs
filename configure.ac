@@ -55,7 +55,7 @@ dnl specify required include directories..
 FUSEFLAGS="-D_FILE_OFFSET_BITS=64 -DFUSE_USE_VERSION=26"
 CPPFLAGS="$CPPFLAGS $USER_INCLUDES $FUSEFLAGS -D__STDC_FORMAT_MACROS"
 CXXFLAGS="$CXXFLAGS $PTHREAD_CFLAGS $USER_INCLUDES"
-LDFLAGS="$LDFLAGS $PTHREAD_LIBS $USER_LDFLAGS"
+LDFLAGS="$LDFLAGS $PTHREAD_LIBS $USER_LDFLAGS -Wl,--as-needed"
 
 # default install path on Darwin of Macports, which is where rlog may be
 if test -z "${DARWIN_TRUE}"; then
