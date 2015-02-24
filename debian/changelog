@@ -1,0 +1,11 @@
+encfs (1.7.5-0anevia1+lenny2+nmu2) lenny; urgency=low
+
+  * fix fuse dependency issue
+
+ -- Frederic Cand <frederic.cand@anevia.com>  Fri, 6 Feb 2015 11:26:28 +0200
+
+encfs (1.7.5-0anevia1+lenny1) lenny; urgency=low
+
+  * first release
+
+ -- Frederic Cand <frederic.cand@anevia.com>  Fri, 6 Feb 2015 11:26:28 +0200
