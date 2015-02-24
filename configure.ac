@@ -132,8 +132,14 @@ dnl Check for valgrind headers..
 AC_ARG_ENABLE(valgrind,
     AC_HELP_STRING([--enable-valgrind],
                    [build with valgrind support.]),
-       AC_CHECK_HEADERS([valgrind/valgrind.h valgrind/memcheck.h])
-       )
+       with_valgrind=$enableval, with_valgrind="yes" )
+
+if test "x$with_valgrind" = xyes; then
+  PKG_CHECK_MODULES(VALGRIND, valgrind, with_valgrind="yes", with_valgrind="no")
+  if test x"$with_valgrind" = xno; then
+    AC_MSG_FAILURE([valgrind not found])
+  fi
+fi
 
 # allow user option of not using ssl..
 AC_ARG_ENABLE(openssl,
