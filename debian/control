@@ -2,7 +2,7 @@ Source: encfs
 Section: anevia
 Priority: optional
 Maintainer: Frederic Cand <frederic.cand@anevia.com>
-Build-Depends: debhelper (>= 8), libtool, pkg-config, autoconf, automake, gettext, cvs, librlog-dev, librlog1c2a, libfuse-dev (>= 2.8.1), libssl-dev (>> 0.9.8), quilt, libboost-dev, libboost-serialization-dev, libboost-filesystem-dev, valgrind
+Build-Depends: debhelper (>= 8), libtool, pkg-config, autoconf, automake, gettext, cvs, librlog-dev, libfuse-dev (>= 2.8.1), libssl-dev (>> 0.9.8), quilt, libboost-dev, libboost-serialization-dev, libboost-filesystem-dev, valgrind
 Standards-Version: 3.7.3
 Homepage: https://github.com/fcand-anevia/encfs/tree/range
 Vcs-Git: https://github.com/fcand-anevia/encfs.git
