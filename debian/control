@@ -2,14 +2,14 @@ Source: encfs
 Section: anevia
 Priority: optional
 Maintainer: Frederic Cand <frederic.cand@anevia.com>
-Build-Depends: debhelper (>= 8), libtool, pkg-config, autoconf, automake, gettext, cvs, librlog-dev, libfuse-dev (>= 2.8.1), libssl-dev (>> 0.9.8), quilt, libboost-dev, libboost-serialization-dev, libboost-filesystem-dev, valgrind
+Build-Depends: debhelper (>= 8), libtool, pkg-config, autoconf, automake, gettext, cvs, librlog-dev, libfuse-dev (>= 2.8.1), libssl-dev (>= 1.0.0), quilt, libboost-dev, libboost-serialization-dev, libboost-filesystem-dev, valgrind
 Standards-Version: 3.7.3
 Homepage: https://github.com/fcand-anevia/encfs/tree/range
 Vcs-Git: https://github.com/fcand-anevia/encfs.git
 
 Package: encfs
 Architecture: any
-Depends: ${misc:Depends}, libboost-serialization1.34.1 (>= 1.34.1-8), libboost-filesystem1.34.1, libc6 (>= 2.7-1), libfuse2 (>= 2.8.1), libgcc1 (>= 1:4.1.1-21), librlog1c2a, libssl0.9.8 (>= 0.9.8f-5), libstdc++6 (>= 4.2.1-4), fuse-utils
+Depends: ${misc:Depends}, libboost-serialization1.34.1 (>= 1.34.1-8), libboost-filesystem1.34.1, libc6 (>= 2.7-1), libfuse2 (>= 2.8.1), libgcc1 (>= 1:4.1.1-21), librlog1c2a, libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.2.1-4), fuse-utils
 Description: encrypted virtual filesystem
  EncFS integrates file system encryption into the Unix(TM) file system.
  Encrypted data is stored within the native file system, thus no
